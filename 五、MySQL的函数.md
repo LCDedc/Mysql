@@ -79,4 +79,10 @@
 * FORMAT(X,N):将数字x格式化，以四舍五入的方法保存小数点后n位，以字符串输出
 * CONV(N,FROM_BASE,TO_BASE):不同进制的数字之间的转换
 * INET_ATON(EXPR):将ip地址转换为整数，INET_NTOA:转为ip
-* GET_LOCK(STR,TIMEOUT):
+* GET_LOCK(STR,TIMEOUT):指定字符串获得锁
+* BENCHMARK(COUNT,EXPR):重复执行expr表达式N次
+* CONVERT(STR1 UNSING ):转换不同的字符集
+* CAST(x,AS type)/CONVERT(X,TYPE):改变x的数据类型
+
+## 注意
+* **mysql中的所有函数不能直接使用，需要select+函数，除了有show字段的除外，例如select md5('newsss');和show processlist ;**
